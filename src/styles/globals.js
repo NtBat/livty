@@ -36,6 +36,10 @@ const GlobalStyle = createGlobalStyle`
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   padding: 0;

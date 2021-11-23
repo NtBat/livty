@@ -11,7 +11,7 @@ const text = {
 
 function Location() {
   return (
-    <S.Location>
+    <S.Location id="localizacao">
       <S.Wrapper>
         <S.Banner>
           <S.BannerImage
