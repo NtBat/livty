@@ -77,26 +77,3 @@ export const Text = styled.p`
     margin-top: 20px;
   }
 `;
-
-// export const Title = styled.h1`
-//   font-weight: 700;
-//   font-size: ${({ theme }) => theme.fonts.septenary};
-//   color: ${({ theme }) => theme.colors.primary};
-//   max-width: 682px;
-//   position: relative;
-//   margin-bottom: 72px;
-
-//   strong {
-//     color: ${({ theme }) => theme.colors.zero};
-//   }
-
-//   &:after {
-//     content: "";
-//     width: 164px;
-//     height: 2px;
-//     background: ${({ theme }) => theme.colors.primary};
-//     position: absolute;
-//     left: 0;
-//     bottom: -27px;
-//   }
-// `;
