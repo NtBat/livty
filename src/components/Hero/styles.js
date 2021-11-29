@@ -45,6 +45,6 @@ export const Title = styled.h1`
 
 export const Arrow = styled.img`
   position: absolute;
-  left: 0;
+  left: 15px;
   bottom: 50px;
 `;
