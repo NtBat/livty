@@ -6,6 +6,7 @@ export const Content = styled.div`
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 84px 0 107px;
+  margin-top: 126px;
 `;
 
 export const TitleWrapper = styled.div`

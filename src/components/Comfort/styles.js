@@ -63,6 +63,7 @@ export const Wrapper = styled.div`
     height: 1px;
     bottom: 0;
     content: "";
+    display: ${({ second }) => (second ? "none" : "block")};
   }
 `;
 
@@ -124,6 +125,8 @@ export const ImageWrapper = styled.div`
 export const Image = styled.img`
   display: block;
   width: 100%;
+  height: 670px;
+  object-fit: cover;
 
   border-radius: ${({ second }) => (second ? "0 50px 0 0" : "")};
 `;
