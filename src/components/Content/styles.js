@@ -5,7 +5,7 @@ export const Content = styled.div`
   background: url("/bg-content.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 167px 0 103px;
+  padding: 84px 0 107px;
 `;
 
 export const TitleWrapper = styled.div`
@@ -25,12 +25,14 @@ export const Title = styled.h1`
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 612px;
+  letter-spacing: 3px;
 
   &:after {
     content: "";
     position: absolute;
     bottom: -8px;
-    width: 50%;
+    width: 95px;
     background: ${({ theme }) => theme.colors.primary};
     height: 2px;
   }
@@ -76,11 +78,4 @@ export const Text = styled.p`
   text-align: center;
   width: 100%;
   margin: 0;
-`;
-
-export const ButtonWrapper = styled.div`
-  margin-top: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;

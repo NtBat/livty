@@ -5,11 +5,13 @@ export const Location = styled.section``;
 
 export const Wrapper = styled.div`
   display: flex;
+  height: 100vh;
 `;
 
 export const Banner = styled.div`
   position: relative;
   width: 40%;
+  height: 100%;
 
   &:before {
     content: "";
@@ -26,6 +28,8 @@ export const BannerImage = styled.img`
   display: block;
   width: 100%;
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
 
 export const TextWrapper = styled.div`

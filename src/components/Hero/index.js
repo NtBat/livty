@@ -9,7 +9,14 @@ function Hero() {
           Otimização <strong>e</strong> qualidade de vida{" "}
           <strong>em um investimento equilibrado</strong>
         </S.Title>
-        <Button title="Tenho Interesse" link="#contato" color="primary" />
+        <S.ButtonWrapper>
+          <Button title="Tenho Interesse" link="#contato" color="primary" />
+          <Button
+            title="Assistir apresentação"
+            link="#contato"
+            icon="/icons/play.svg"
+          />
+        </S.ButtonWrapper>
         <S.Arrow
           src="/icons/arrow-down.svg"
           alt="Seta apontando para baixo"

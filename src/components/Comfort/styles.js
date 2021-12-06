@@ -2,50 +2,57 @@ import styled from "styled-components";
 import theme from "@/styles/theme";
 
 export const Comfort = styled.div`
-  margin-top: 53px;
+  margin-top: 50px;
 `;
 
-export const TitleWrapper = styled.div`
+export const TextTitleWrapper = styled.div`
   display: inline-flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
   width: 100%;
+  position: relative;
+  margin-bottom: 17px;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    background: ${({ theme }) => theme.colors.primary};
+    width: 34%;
+    height: 1px;
+    top: 57px;
+    content: "";
+
+    @media (max-width: 1380px) {
+      width: 29%;
+    }
+  }
 `;
 
-export const Title = styled.h1`
+export const TextTitle = styled.h2`
   position: relative;
-  font-weight: 700;
-  font-size: ${({ theme }) => theme.fonts.octonary};
   color: ${({ theme }) => theme.colors.secondary};
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: ${({ theme }) => theme.fonts.octonary};
+  font-weight: 700;
+  display: block;
+  text-align: right;
+  letter-spacing: 6px;
 
   &:after {
-    content: "";
     position: absolute;
-    bottom: -8px;
-    width: 50%;
-    background: ${({ theme }) => theme.colors.secondary};
-    height: 2px;
+    left: -57px;
+    width: 103px;
+    height: 94%;
+    top: 2px;
+    content: "";
+    z-index: -1;
+    background: ${({ theme }) => theme.colors.primary};
   }
 `;
 
 export const Wrapper = styled.div`
   display: flex;
-  margin-top: 115px;
-
+  margin-top: 100px;
+  align-items: center;
   flex-direction: ${({ second }) => (second ? "row-reverse" : "")};
-`;
-
-export const TextWrapper = styled.div`
-  width: 40%;
-  position: relative;
-  padding: ${({ second }) => (second ? "0 0 0 130px" : "0 58px 0 0")};
-  display: inline-flex;
-  flex-direction: column;
   position: relative;
 
   &:before {
@@ -59,54 +66,22 @@ export const TextWrapper = styled.div`
   }
 `;
 
-export const TextTitleWrapper = styled.div`
+export const TextWrapper = styled.div`
+  width: 40%;
+  padding: ${({ second }) => (second ? "0 0 0 45px" : "0 90px 0 0")};
   display: inline-flex;
-  justify-content: ${({ second }) => (second ? "flex-start" : "flex-end")};
-  width: 100%;
-  position: relative;
-  margin-bottom: 17px;
-
-  &:before {
-    position: absolute;
-    left: 0;
-    background: ${({ theme }) => theme.colors.primary};
-    width: ${({ second }) => (second ? "100%" : "406px")};
-    height: 1px;
-    top: 47px;
-    content: "";
-  }
-`;
-
-export const TextTitle = styled.h2`
-  position: relative;
-  color: ${({ theme }) => theme.colors.secondary};
-  font-size: ${({ theme }) => theme.fonts.senary};
-  font-weight: 700;
-  display: block;
-  text-align: right;
-
-  &:after {
-    position: absolute;
-    left: 0;
-    background: ${({ theme }) => theme.colors.primary};
-    width: 81px;
-    height: 109%;
-    top: 0;
-    content: "";
-    z-index: -1;
-  }
+  flex-direction: column;
 `;
 
 export const Box = styled.div`
-  border-radius: 10px;
-  background: ${({ second }) => (second ? "#88A1BD" : "#E2E574")};
   position: relative;
   display: inline-flex;
   align-items: center;
-  padding: 42px;
-  width: 370px;
-  margin: ${({ second }) => (second ? "31px auto 0 10px" : "31px 10px 0 auto")};
-  min-height: 150px;
+  margin: ${({ second }) => (second ? "40px auto 0 0" : "40px 0 0 auto")};
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   &.third {
     background: ${({ theme }) => theme.colors.secondary};
@@ -125,34 +100,19 @@ export const Box = styled.div`
       border-radius: 10px;
     }
   }
-
-  &:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: -12px;
-    top: 12px;
-    border: 1px solid ${({ theme }) => theme.colors.primary};
-    z-index: -1;
-    display: ${({ second }) => (second ? "block" : "none")};
-    border-radius: 10px;
-  }
 `;
 
-export const BoxNumber = styled.img`
-  position: absolute;
-  left: 15px;
-  width: 76px;
-  top: 17px;
-  height: 107px;
+export const BoxNumber = styled.div`
+  margin-right: ${({ second }) => (second ? "17px" : "38px")};
 `;
+
+export const BoxNumberIcon = styled.img``;
 
 export const BoxText = styled.p`
-  font-size: ${({ theme }) => theme.fonts.tertiary};
+  font-size: ${({ theme }) => theme.fonts.secondary};
   font-weight: 400;
-  color: ${({ second }) => (second ? "#E2E574" : "#62708B")};
-  max-width: 273px;
+  color: ${({ theme }) => theme.colors.quaternary};
+  width: 284px;
   line-height: 21px;
   margin: 0;
 `;
@@ -169,6 +129,5 @@ export const Image = styled.img`
 `;
 
 export const ButtonWrapper = styled.div`
-  margin-top: 40px;
-  margin-left: auto;
+  margin-top: 48px;
 `;

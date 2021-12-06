@@ -1,5 +1,4 @@
 import * as S from "./styles";
-import Button from "@/components/Button";
 
 const content = [
   {
@@ -29,7 +28,7 @@ function Content() {
   return (
     <S.Content id="conteudo">
       <S.TitleWrapper>
-        <S.Title>Conteúdo</S.Title>
+        <S.Title>O Empreendimento ainda conta com:</S.Title>
       </S.TitleWrapper>
 
       <div className="container">
@@ -40,10 +39,6 @@ function Content() {
             </S.Box>
           ))}
         </S.Wrapper>
-
-        <S.ButtonWrapper>
-          <Button title="Tenho Interesse" link="#contato" />
-        </S.ButtonWrapper>
       </div>
     </S.Content>
   );

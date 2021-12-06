@@ -29,5 +29,5 @@ export const Link = styled.a`
 `;
 
 export const Icon = styled.img`
-  margin-left: 6px;
+  margin-right: 10px;
 `;

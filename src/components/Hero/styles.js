@@ -43,6 +43,11 @@ export const Title = styled.h1`
   }
 `;
 
+export const ButtonWrapper = styled.div`
+  display: flex;
+  gap: 0 30px;
+`;
+
 export const Arrow = styled.img`
   position: absolute;
   left: 15px;
