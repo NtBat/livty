@@ -64,11 +64,11 @@ export const Paragraph = styled.div`
   border-radius: 10px;
   background: ${({ theme }) => theme.colors.zero};
   border-left: 13px solid ${({ theme }) => theme.colors.primary};
-  padding: 81px 43px 71px 56px;
+  padding: 29px 43px 71px 29px;
   display: inline-flex;
   flex-direction: column;
   margin-left: -150px;
-  margin-top: 200px;
+  margin-top: 100px;
 `;
 
 export const Text = styled.p`
