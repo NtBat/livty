@@ -55,6 +55,16 @@ export const GalleryWrapper = styled.div`
 
   > div {
     width: calc(100% / 4);
+    min-height: 383px;
+
+    > div {
+      height: 100%;
+
+      > img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 
   img {
@@ -96,6 +106,10 @@ export const BoxText = styled.div`
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
+
+  @media (max-width: 1480px) {
+    padding: 13px 15px;
+  }
 `;
 
 export const BoxItems = styled.div`
@@ -110,6 +124,10 @@ export const BoxItems = styled.div`
 export const BoxIcon = styled.img`
   width: 42px;
   height: 42px;
+
+  @media (max-width: 1300px) {
+    height: 32px;
+  }
 `;
 
 export const BoxTitle = styled.span`
@@ -117,6 +135,10 @@ export const BoxTitle = styled.span`
   margin-top: 18px;
   font-size: ${({ theme }) => theme.fonts.quaternary};
   color: ${({ theme }) => theme.colors.secondary};
+
+  @media (max-width: 1220px) {
+    font-size: ${({ theme }) => theme.fonts.tertiary};
+  }
 `;
 
 export const BoxDescription = styled.span`

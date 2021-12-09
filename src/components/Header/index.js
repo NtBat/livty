@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from "react";
 
 import * as S from "./styles";
 
@@ -30,6 +31,12 @@ const menu = [
 ];
 
 function Header() {
+  const [menuBurger, setActiveMenuBurger] = useState(false);
+
+  function handleBurger() {
+    setActiveMenuBurger(!menuBurger);
+  }
+
   return (
     <S.Header>
       <div className="container">
@@ -48,8 +55,16 @@ function Header() {
               </S.MenuItem>
             ))}
           </S.Menu>
+
+          <S.Bars onClick={handleBurger}>
+            <S.BarsTop className={menuBurger ? "active" : ""} />
+            <S.BarsMid className={menuBurger ? "active" : ""} />
+            <S.BarsBot className={menuBurger ? "active" : ""} />
+          </S.Bars>
         </S.Wrapper>
       </div>
+
+      <S.MenuMobile open={menuBurger}></S.MenuMobile>
     </S.Header>
   );
 }

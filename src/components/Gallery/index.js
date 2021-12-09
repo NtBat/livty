@@ -4,64 +4,74 @@ import * as S from "./styles";
 
 const images = [
   {
-    title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
+    title: "Academia",
+    description: "Academia",
+    image: "/galeria_1.jpg",
+  },
+  {
+    title: "Área externa",
+    description: "Área externa",
+    image: "/galeria_2.jpg",
+  },
+  {
+    title: "Área externa",
+    description: "Área externa",
+    image: "/galeria_3.jpg",
+  },
+  {
+    title: "Brinquedoteca",
+    description: "Brinquedoteca",
+    image: "/galeria_4.jpg",
+  },
+  {
+    title: "Hall",
+    description: "Hall",
+    image: "/galeria_5.jpg",
+  },
+  {
+    title: "Hall",
+    description: "Hall",
+    image: "/galeria_6.jpg",
+  },
+  {
+    title: "Horta",
+    description: "Horta",
+    image: "/galeria_7.jpg",
+  },
+  {
+    title: "Horta",
+    description: "Horta",
+    image: "/galeria_8.jpg",
   },
   {
     title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
+    description: "Piscina",
+    image: "/galeria_9.jpg",
   },
   {
-    title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
+    title: "Playground",
+    description: "Playground",
+    image: "/galeria_10.jpg",
   },
   {
-    title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
+    title: "Quiosque",
+    description: "Quiosque",
+    image: "/galeria_11.jpg",
   },
   {
-    title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
+    title: "Salão de Festas",
+    description: "Salão de Festas",
+    image: "/galeria_12.jpg",
   },
   {
-    title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
+    title: "Salão de Festas",
+    description: "Salão de Festas",
+    image: "/galeria_13.jpg",
   },
   {
-    title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
-  },
-  {
-    title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
-  },
-  {
-    title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
-  },
-  {
-    title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
-  },
-  {
-    title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
-  },
-  {
-    title: "Piscina",
-    description: "Piscina aquecida",
-    image: "/piscina.png",
+    title: "Salão de Festas",
+    description: "Salão de Festas",
+    image: "/galeria_14.jpg",
   },
 ];
 

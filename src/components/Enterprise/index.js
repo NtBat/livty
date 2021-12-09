@@ -16,7 +16,7 @@ function Enterprise() {
           </S.BoxTitleWrapper>
 
           <S.ImageWrapper>
-            <S.Image src="/terreo.png" alt="Planta do Térreo" />
+            <S.Image src="/planta_terreo.jpg" alt="Planta do Térreo" />
           </S.ImageWrapper>
         </S.Box>
 
@@ -26,7 +26,7 @@ function Enterprise() {
           </S.PavementTitleWrapper>
 
           <S.ImageWrapper>
-            <S.Image src="/pavimento4.png" alt="Planta do Pavimento 4" />
+            <S.Image src="/planta_4pav.jpg" alt="Planta do Pavimento 4" />
           </S.ImageWrapper>
         </S.Box>
 
@@ -40,7 +40,7 @@ function Enterprise() {
           <Tabs
             title1="Planta"
             title2="Fotos"
-            image1="/pavimento4.png"
+            image1="/planta_tipo.jpg"
             image2="/pavimento514.png"
           />
         </S.Box>
@@ -128,6 +128,50 @@ function Enterprise() {
             image1="/apto1a.png"
             image2="/apto1a.png"
             image3="/apto1a.png"
+          />
+        </S.Box>
+
+        <S.Box>
+          <S.PavementTitleWrapper>
+            <S.PavementTitle>Pavimento 15</S.PavementTitle>
+          </S.PavementTitleWrapper>
+
+          <Tabs
+            title1="Planta"
+            title2="Fotos"
+            image1="/planta_15pav.jpg"
+            image2="/pavimento514.png"
+          />
+
+          <Tabs
+            title1="Apto 1"
+            title2="Apto 2"
+            title3="Apto 3"
+            title4="Apto 4"
+            image1="/pavimento4.png"
+            image2="/pavimento514.png"
+            image3="/pavimento4.png"
+            image4="/pavimento514.png"
+          />
+        </S.Box>
+
+        <S.Box>
+          <S.PavementTitleWrapper>
+            <S.PavementTitle>Pavimento 16</S.PavementTitle>
+          </S.PavementTitleWrapper>
+
+          <Tabs
+            title1="Planta"
+            title2="Fotos"
+            image1="/planta_16pav.jpg"
+            image2="/pavimento514.png"
+          />
+
+          <Tabs
+            title1="Apto 1"
+            title2="Apto 2"
+            image1="/apto1a.png"
+            image2="/apto1a.png"
           />
         </S.Box>
       </div>

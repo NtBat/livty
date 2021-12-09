@@ -16,7 +16,11 @@ export const Wrapper = styled.div`
   padding: 43px 0;
 `;
 
-export const Menu = styled.nav``;
+export const Menu = styled.nav`
+  @media (max-width: 1050px) {
+    display: none;
+  }
+`;
 
 export const MenuItem = styled.a`
   font-size: ${({ theme }) => theme.fonts.secondary};
@@ -42,4 +46,113 @@ export const MenuItem = styled.a`
   &:not(:last-child) {
     margin-right: 59px;
   }
+`;
+
+export const Bars = styled.div`
+  display: none;
+  position: relative;
+  transition: all 1s cubic-bezier(0.68, -0.05, 0.27, 1.25);
+
+  @media (max-width: 1050px) {
+    display: flex;
+    width: 1.5rem;
+    position: relative;
+  }
+`;
+
+export const BarsTop = styled.span`
+  width: 88.666667%;
+  left: auto;
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 2px solid ${({ theme }) => theme.colors.first};
+  transition: 0.55s;
+  border-radius: 7px;
+  height: 0.125rem;
+  top: 0;
+
+  &.active {
+    animation: barTop 0.4s cubic-bezier(0.68, -0.05, 0.27, 1.25) forwards;
+    animation-delay: 0.3s;
+  }
+
+  @keyframes barTop {
+    0% {
+      opacity: 1;
+      filter: none;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+`;
+
+export const BarsMid = styled.span`
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 2px solid ${({ theme }) => theme.colors.first};
+  transition: 0.55s;
+  border-radius: 7px;
+  height: 0.125rem;
+  top: 8px;
+
+  &.active {
+    animation: barMid 0.4s cubic-bezier(0.68, -0.05, 0.27, 1.25) forwards;
+    animation-delay: 0.3s;
+    top: 0;
+  }
+
+  @keyframes barMid {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(40deg);
+    }
+  }
+`;
+
+export const BarsBot = styled.span`
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 2px solid ${({ theme }) => theme.colors.first};
+  transition: 0.55s;
+  border-radius: 7px;
+  height: 0.125rem;
+  top: -8px;
+
+  &.active {
+    top: 0;
+    animation: barBot 0.4s cubic-bezier(0.68, -0.05, 0.27, 1.25) forwards;
+    animation-delay: 0.3s;
+  }
+
+  @keyframes barBot {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(-40deg);
+    }
+  }
+`;
+
+export const MenuMobile = styled.div`
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  top: 84px;
+  position: fixed;
+  transition: all 300ms ease-in-out;
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+  overflow: auto;
+  padding-bottom: 98px;
 `;

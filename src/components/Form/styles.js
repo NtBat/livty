@@ -3,6 +3,7 @@ import theme from "@/styles/theme";
 
 export const FormWrapper = styled.div`
   display: flex;
+  margin-top: 150px;
 `;
 
 export const FormBox = styled.div`

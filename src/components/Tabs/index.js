@@ -1,7 +1,16 @@
 import * as S from "./styles";
 import { useState } from "react";
 
-function Tabs({ title1, title2, title3, image1, image2, image3 }) {
+function Tabs({
+  title1,
+  title2,
+  title3,
+  title4,
+  image1,
+  image2,
+  image3,
+  image4,
+}) {
   const [active, setActive] = useState(0);
   const handleClick = (e) => {
     const index = parseInt(e.target.id, 0);
@@ -25,6 +34,12 @@ function Tabs({ title1, title2, title3, image1, image2, image3 }) {
             {title3}
           </S.Tab>
         )}
+
+        {title4 && (
+          <S.Tab onClick={handleClick} active={active === 3} id={3}>
+            {title4}
+          </S.Tab>
+        )}
       </S.Tabs>
       <>
         <S.Content active={active === 0}>
@@ -42,6 +57,14 @@ function Tabs({ title1, title2, title3, image1, image2, image3 }) {
           <S.Content active={active === 2}>
             <S.ImageWrapper>
               <S.Image src={image3} alt="Planta" />
+            </S.ImageWrapper>
+          </S.Content>
+        )}
+
+        {title4 && (
+          <S.Content active={active === 3}>
+            <S.ImageWrapper>
+              <S.Image src={image4} alt="Planta" />
             </S.ImageWrapper>
           </S.Content>
         )}
