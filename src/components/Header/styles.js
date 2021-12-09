@@ -66,7 +66,7 @@ export const BarsTop = styled.span`
   backface-visibility: hidden;
   position: absolute;
   left: 0;
-  border-top: 2px solid ${({ theme }) => theme.colors.first};
+  border-top: 2px solid ${({ theme }) => theme.colors.zero};
   transition: 0.55s;
   border-radius: 7px;
   height: 0.125rem;
@@ -94,7 +94,7 @@ export const BarsMid = styled.span`
   backface-visibility: hidden;
   position: absolute;
   left: 0;
-  border-top: 2px solid ${({ theme }) => theme.colors.first};
+  border-top: 2px solid ${({ theme }) => theme.colors.zero};
   transition: 0.55s;
   border-radius: 7px;
   height: 0.125rem;
@@ -122,7 +122,7 @@ export const BarsBot = styled.span`
   backface-visibility: hidden;
   position: absolute;
   left: 0;
-  border-top: 2px solid ${({ theme }) => theme.colors.first};
+  border-top: 2px solid ${({ theme }) => theme.colors.zero};
   transition: 0.55s;
   border-radius: 7px;
   height: 0.125rem;
@@ -146,13 +146,34 @@ export const BarsBot = styled.span`
 `;
 
 export const MenuMobile = styled.div`
-  background: #fff;
+  background: ${({ theme }) => theme.colors.secondary};
   width: 100%;
   height: 100vh;
-  top: 84px;
+  top: 0;
   position: fixed;
   transition: all 300ms ease-in-out;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   overflow: auto;
-  padding-bottom: 98px;
 `;
+
+export const MenuMobileContent = styled.div`
+  height: 100%;
+  padding: 20px;
+`;
+
+export const MenuMobileNav = styled.nav`
+  display: flex;
+  flex-direction: column;
+
+  a {
+    margin-top: 20px;
+  }
+`;
+
+export const MenuMobileHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const MenuClose = styled.button``;

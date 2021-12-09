@@ -64,7 +64,27 @@ function Header() {
         </S.Wrapper>
       </div>
 
-      <S.MenuMobile open={menuBurger}></S.MenuMobile>
+      <S.MenuMobile open={menuBurger}>
+        <S.MenuMobileContent>
+          <S.MenuMobileHeader>
+            <Image
+              src="/icons/logo.svg"
+              width="218px"
+              height="44px"
+              alt="Logo da Livty"
+            />
+            <S.MenuClose onClick={handleBurger}>X</S.MenuClose>
+          </S.MenuMobileHeader>
+
+          <S.MenuMobileNav>
+            {menu.map((item, index) => (
+              <S.MenuItem key={index} href={item.link} onClick={handleBurger}>
+                {item.title}
+              </S.MenuItem>
+            ))}
+          </S.MenuMobileNav>
+        </S.MenuMobileContent>
+      </S.MenuMobile>
     </S.Header>
   );
 }
