@@ -57,13 +57,9 @@ export const GalleryWrapper = styled.div`
     width: calc(100% / 4);
     min-height: 383px;
 
-    > div {
+    > img {
       height: 100%;
-
-      > img {
-        height: 100%;
-        object-fit: cover;
-      }
+      object-fit: cover;
     }
   }
 
@@ -82,6 +78,8 @@ export const Box = styled.div`
     opacity: 1;
   }
 `;
+
+export const Image = styled.img``;
 
 export const BoxName = styled.span`
   display: block;

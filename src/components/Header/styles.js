@@ -173,7 +173,13 @@ export const MenuMobileNav = styled.nav`
 export const MenuMobileHeader = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
 `;
 
-export const MenuClose = styled.button``;
+export const MenuClose = styled.button`
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 25px;
+`;
