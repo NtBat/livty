@@ -120,12 +120,38 @@ export const PavementTitle = styled.h2`
   }
 
   &:before {
-    content: "Andar 4";
+    content: '${(props) => props.before}';
     position: absolute;
     left: 0;
     font-size: 16px;
     bottom: -15px;
     font-weight: 100;
     letter-spacing: 2px;
+  }
+`;
+
+export const FinalTitleWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+`;
+
+export const FinalTitle = styled.h2`
+  position: relative;
+  color: ${({ theme }) => theme.colors.primary};
+  font-size: ${({ theme }) => theme.fonts.quinary};
+  font-weight: 700;
+  display: block;
+  text-align: center;
+
+  &:after {
+    position: absolute;
+    left: -12px;
+    width: 121%;
+    height: 71%;
+    top: 2px;
+    content: "";
+    z-index: -1;
+    background: ${({ theme }) => theme.colors.secondary};
   }
 `;

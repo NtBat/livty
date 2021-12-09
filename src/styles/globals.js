@@ -47,6 +47,10 @@ body {
   font-family: "Stolzl", sans-serif;
 }
 
+button {
+  font-family: "Stolzl", sans-serif;
+}
+
 a {
   color: inherit;
   text-decoration: none;
