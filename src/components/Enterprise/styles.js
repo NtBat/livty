@@ -3,6 +3,10 @@ import theme from "@/styles/theme";
 
 export const Enterprise = styled.div`
   margin-top: 137px;
+
+  @media (max-width: 1050px) {
+    margin-top: 50px;
+  }
 `;
 
 export const TitleWrapper = styled.div`
@@ -18,6 +22,11 @@ export const Title = styled.h1`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1050px) {
+    font-size: ${({ theme }) => theme.fonts.quinary};
+    padding: 0 20px;
+  }
 
   &:before {
     position: absolute;
@@ -47,6 +56,10 @@ export const BoxTitleWrapper = styled.div`
     height: 1px;
     top: 51px;
     content: "";
+
+    @media (max-width: 1050px) {
+      display: none;
+    }
   }
 `;
 
@@ -96,6 +109,10 @@ export const PavementTitleWrapper = styled.div`
     height: 1px;
     top: 51px;
     content: "";
+
+    @media (max-width: 1050px) {
+      display: none;
+    }
   }
 `;
 

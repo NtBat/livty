@@ -7,6 +7,11 @@ export const Content = styled.div`
   background-size: 100% 100%;
   padding: 84px 0 107px;
   margin-top: 126px;
+
+  @media (max-width: 1050px) {
+    margin-top: 50px;
+    padding: 40px 20px;
+  }
 `;
 
 export const TitleWrapper = styled.div`
@@ -28,6 +33,10 @@ export const Title = styled.h1`
   justify-content: center;
   max-width: 612px;
   letter-spacing: 3px;
+
+  @media (max-width: 1050px) {
+    font-size: ${({ theme }) => theme.fonts.quinary};
+  }
 
   &:after {
     content: "";
@@ -68,6 +77,18 @@ export const Box = styled.div`
     z-index: -1;
     display: block;
     border-radius: 10px;
+  }
+
+  @media (max-width: 1050px) {
+    width: 31%;
+  }
+
+  @media (max-width: 800px) {
+    width: 48.33%;
+  }
+
+  @media (max-width: 680px) {
+    width: 100%;
   }
 `;
 

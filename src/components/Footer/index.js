@@ -5,16 +5,7 @@ function Footer() {
     <S.Footer>
       <div className="container">
         <S.Wrapper>
-          <S.Text>
-            © Copyright 2021 Livty - All rights reserved. - Privacy policy
-          </S.Text>
-          <S.Dev
-            href="https://www.beagleship.com.br/"
-            target="_blank"
-            rel="noopener"
-          >
-            <S.DevIcon src="/icons/beagle.png" alt="Beagleship" />
-          </S.Dev>
+          <S.Text>© Copyright 2021 Livty - Todos direitos reservados.</S.Text>
         </S.Wrapper>
       </div>
     </S.Footer>

@@ -24,6 +24,10 @@ export const TextTitleWrapper = styled.div`
     @media (max-width: 1380px) {
       width: 29%;
     }
+
+    @media (max-width: 1050px) {
+      display: none;
+    }
   }
 `;
 
@@ -35,6 +39,11 @@ export const TextTitle = styled.h2`
   display: block;
   text-align: right;
   letter-spacing: 6px;
+
+  @media (max-width: 1050px) {
+    font-size: ${({ theme }) => theme.fonts.quinary};
+    letter-spacing: 3px;
+  }
 
   &:after {
     position: absolute;
@@ -55,6 +64,11 @@ export const Wrapper = styled.div`
   flex-direction: ${({ second }) => (second ? "row-reverse" : "")};
   position: relative;
 
+  @media (max-width: 1050px) {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
   &:before {
     position: absolute;
     left: 0;
@@ -72,6 +86,11 @@ export const TextWrapper = styled.div`
   padding: ${({ second }) => (second ? "0 0 0 45px" : "0 90px 0 0")};
   display: inline-flex;
   flex-direction: column;
+
+  @media (max-width: 1050px) {
+    width: 100%;
+    padding: 0 20px;
+  }
 `;
 
 export const Box = styled.div`
@@ -80,8 +99,16 @@ export const Box = styled.div`
   align-items: center;
   margin: ${({ second }) => (second ? "40px auto 0 0" : "40px 0 0 auto")};
 
+  @media (max-width: 1050px) {
+    margin: 20px 0;
+  }
+
   &:first-child {
     margin-top: 0;
+
+    @media (max-width: 1050px) {
+      margin: 20px 0;
+    }
   }
 
   &.third {
@@ -120,6 +147,10 @@ export const BoxText = styled.p`
 
 export const ImageWrapper = styled.div`
   width: 60%;
+
+  @media (max-width: 1050px) {
+    width: 100%;
+  }
 `;
 
 export const Image = styled.img`
@@ -129,6 +160,10 @@ export const Image = styled.img`
   object-fit: cover;
 
   border-radius: ${({ second }) => (second ? "0 50px 0 0" : "")};
+
+  @media (max-width: 1050px) {
+    height: auto;
+  }
 `;
 
 export const ButtonWrapper = styled.div`

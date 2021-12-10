@@ -4,7 +4,7 @@ import Tabs from "@/components/Tabs";
 
 function Enterprise() {
   return (
-    <S.Enterprise id="plantas">
+    <S.Enterprise id="empreendimento">
       <div className="container">
         <S.TitleWrapper>
           <S.Title>O Empreendimento</S.Title>
@@ -37,12 +37,9 @@ function Enterprise() {
             </S.PavementTitle>
           </S.PavementTitleWrapper>
 
-          <Tabs
-            title1="Planta"
-            title2="Fotos"
-            image1="/planta_tipo.jpg"
-            image2="/pavimento514.png"
-          />
+          <S.ImageWrapper>
+            <S.Image src="/planta_tipo.jpg" alt="Planta do Pavimento 4" />
+          </S.ImageWrapper>
         </S.Box>
 
         <S.Box>
@@ -136,23 +133,9 @@ function Enterprise() {
             <S.PavementTitle>Pavimento 15</S.PavementTitle>
           </S.PavementTitleWrapper>
 
-          <Tabs
-            title1="Planta"
-            title2="Fotos"
-            image1="/planta_15pav.jpg"
-            image2="/pavimento514.png"
-          />
-
-          <Tabs
-            title1="Apto 1"
-            title2="Apto 2"
-            title3="Apto 3"
-            title4="Apto 4"
-            image1="/pavimento4.png"
-            image2="/pavimento514.png"
-            image3="/pavimento4.png"
-            image4="/pavimento514.png"
-          />
+          <S.ImageWrapper>
+            <S.Image src="/planta_15pav.jpg" alt="Planta do Pavimento 4" />
+          </S.ImageWrapper>
         </S.Box>
 
         <S.Box>
@@ -160,19 +143,9 @@ function Enterprise() {
             <S.PavementTitle>Pavimento 16</S.PavementTitle>
           </S.PavementTitleWrapper>
 
-          <Tabs
-            title1="Planta"
-            title2="Fotos"
-            image1="/planta_16pav.jpg"
-            image2="/pavimento514.png"
-          />
-
-          <Tabs
-            title1="Apto 1"
-            title2="Apto 2"
-            image1="/apto1a.png"
-            image2="/apto1a.png"
-          />
+          <S.ImageWrapper>
+            <S.Image src="/planta_16pav.jpg" alt="Planta do Pavimento 4" />
+          </S.ImageWrapper>
         </S.Box>
       </div>
     </S.Enterprise>

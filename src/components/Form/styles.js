@@ -10,6 +10,11 @@ export const FormBox = styled.div`
   background: ${({ theme }) => theme.colors.secondary};
   width: 50%;
   padding: 110px 65px 103px 15px;
+
+  @media (max-width: 1050px) {
+    width: 100%;
+    padding: 50px 20px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -30,6 +35,11 @@ export const Title = styled.h1`
     height: 2px;
     bottom: -16px;
   }
+
+  @media (max-width: 1050px) {
+    margin-left: 0;
+    font-size: ${({ theme }) => theme.fonts.quinary};
+  }
 `;
 
 export const Form = styled.form``;
@@ -42,6 +52,11 @@ export const Label = styled.label`
   margin-top: 33px;
   max-width: 539px;
   margin-left: auto;
+
+  @media (max-width: 1050px) {
+    margin-left: 0;
+    max-width: 100%;
+  }
 `;
 
 export const Input = styled.input`
@@ -54,6 +69,10 @@ export const Input = styled.input`
   margin-top: 7px;
   font-family: "Stolzl";
   color: ${({ theme }) => theme.colors.secondary};
+
+  @media (max-width: 1050px) {
+    width: 100%;
+  }
 
   &::placeholder {
     color: ${({ theme }) => theme.colors.quinary};
@@ -77,6 +96,10 @@ export const TextArea = styled.textarea`
     color: ${({ theme }) => theme.colors.quinary};
     font-family: "Stolzl";
     font-weight: 300;
+  }
+
+  @media (max-width: 1050px) {
+    width: 100%;
   }
 `;
 
@@ -107,6 +130,10 @@ export const Button = styled.button`
 
 export const Banner = styled.div`
   width: 50%;
+
+  @media (max-width: 1050px) {
+    display: none;
+  }
 `;
 
 export const BannerImage = styled.img`

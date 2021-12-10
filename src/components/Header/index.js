@@ -17,12 +17,8 @@ const menu = [
     link: "#conforto",
   },
   {
-    title: "Conteúdo",
-    link: "#conteudo",
-  },
-  {
-    title: "Plantas",
-    link: "#plantas",
+    title: "Empreendimento",
+    link: "#empreendimento",
   },
   {
     title: "Fale Conosco",

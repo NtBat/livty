@@ -6,6 +6,10 @@ export const Location = styled.section``;
 export const Wrapper = styled.div`
   display: flex;
   height: 100vh;
+
+  @media (max-width: 1050px) {
+    height: auto;
+  }
 `;
 
 export const Banner = styled.div`
@@ -21,6 +25,10 @@ export const Banner = styled.div`
     position: absolute;
     left: 0;
     top: 260px;
+  }
+
+  @media (max-width: 1050px) {
+    display: none;
   }
 `;
 
@@ -39,6 +47,12 @@ export const TextWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
+  @media (max-width: 1050px) {
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 20px;
+  }
+
   &:before {
     content: "";
     width: 250px;
@@ -47,6 +61,10 @@ export const TextWrapper = styled.div`
     position: absolute;
     left: 0;
     top: 260px;
+
+    @media (max-width: 1050px) {
+      display: none;
+    }
   }
 `;
 
@@ -57,6 +75,23 @@ export const Title = styled.h1`
   max-width: 400px;
   padding-top: 104px;
   padding-left: 100px;
+
+  @media (max-width: 1050px) {
+    font-size: ${({ theme }) => theme.fonts.qunary};
+    padding: 20px;
+    max-width: 100%;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 250px;
+      height: 2px;
+      background: ${({ theme }) => theme.colors.secondary};
+      position: absolute;
+      left: 20px;
+      bottom: 0;
+    }
+  }
 `;
 
 export const Paragraph = styled.div`
@@ -69,6 +104,12 @@ export const Paragraph = styled.div`
   flex-direction: column;
   margin-left: -150px;
   margin-top: 100px;
+
+  @media (max-width: 1050px) {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 `;
 
 export const Text = styled.p`

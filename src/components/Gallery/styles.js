@@ -3,6 +3,10 @@ import theme from "@/styles/theme";
 
 export const Gallery = styled.div`
   margin-top: 162px;
+
+  @media (max-width: 1050px) {
+    margin-top: 50px;
+  }
 `;
 
 export const TitleWrapper = styled.div`
@@ -23,6 +27,10 @@ export const TitleWrapper = styled.div`
 
     @media (max-width: 1421px) {
       width: 72%;
+    }
+
+    @media (max-width: 1050px) {
+      display: none;
     }
   }
 `;
@@ -46,6 +54,12 @@ export const Title = styled.h2`
     z-index: -1;
     background: ${({ theme }) => theme.colors.primary};
   }
+
+  @media (max-width: 1050px) {
+    text-align: left;
+    letter-spacing: 3px;
+    margin-left: 20px;
+  }
 `;
 
 export const GalleryWrapper = styled.div`
@@ -57,9 +71,23 @@ export const GalleryWrapper = styled.div`
     width: calc(100% / 4);
     min-height: 383px;
 
-    > img {
+    a {
       height: 100%;
-      object-fit: cover;
+      display: block;
+
+      > img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    @media (max-width: 1050px) {
+      width: calc(100% / 2);
+      min-height: 250px;
+    }
+
+    @media (max-width: 650px) {
+      width: 100%;
     }
   }
 
@@ -119,9 +147,12 @@ export const BoxItems = styled.div`
   height: 100%;
 `;
 
-export const BoxIcon = styled.img`
+export const BoxIcon = styled.div`
   width: 42px;
   height: 42px;
+  background: url("/icons/search.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 
   @media (max-width: 1300px) {
     height: 32px;
