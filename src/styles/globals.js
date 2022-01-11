@@ -88,22 +88,6 @@ html,
     box-sizing: border-box;
   }
 
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: none;
-    background-color: transparent
-  }
-
-  ::-webkit-scrollbar {
-      width: 6px;
-      background-color: transparent
-  }
-
-  ::-webkit-scrollbar-thumb {
-      background-color: rgba(255,255,255,.25);
-      -webkit-border-radius: 6px;
-      border-radius: 6px
-  }
-
   ul {
     padding-left: 0;
   }
